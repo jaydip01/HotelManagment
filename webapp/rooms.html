@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Rooms</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      width: 900px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 2px solid #ccffcc;
+      padding: 50px;
+    }
+
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+      margin-top: 0;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    table {
+      width: 800px;
+      margin: 0 auto;
+    }
+
+    td {
+      padding: 8px;
+    }
+
+    input[type="date"] {
+      padding: 5px;
+    }
+
+    button {
+      width: 100px;
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="rooms" method="post">
+    <div class="container">
+      <h1>Select Your Room Type</h1>
+      <h2>Rooms</h2>
+      <table>
+        <tr>
+          <td>Sweet room</td>
+          <td>&#8377;699</td>
+          <td>Start Date <input type="date" name="sweet1" min="2023-07-06"></td>
+          <td>End Date <input type="date" name="sweet2" min="2023-07-07"></td>
+        </tr>
+        <tr>
+          <td>Sweet room AC</td>
+          <td>&#8377;1299</td>
+          <td>Start Date <input type="date" name="acSweet1" min="2023-07-06"></td>
+          <td>End Date <input type="date" name="acSweet2" min="2023-07-07"></td>
+        </tr>
+        <tr>
+          <td>Deluxe single room</td>
+          <td>&#8377;1299</td>
+          <td>Start Date <input type="date" name="single1" min="2023-07-06"></td>
+          <td>End Date <input type="date" name="single2" min="2023-07-07"></td>
+        </tr>
+        <tr>
+          <td>Deluxe single room AC</td>
+          <td>&#8377;1999</td>
+          <td>Start Date <input type="date" name="acSingle1" min="2023-07-06"></td>
+          <td>End Date <input type="date" name="acSingle2" min="2023-07-07"></td>
+        </tr>
+        <tr>
+          <td>Deluxe double room</td>
+          <td>&#8377;1999</td>
+          <td>Start Date <input type="date" name="double1" min="2023-07-06"></td>
+          <td>End Date <input type="date" name="double2" min="2023-07-07"></td>
+        </tr>
+        <tr>
+          <td>Deluxe double room AC</td>
+          <td>&#8377;2499</td>
+          <td>Start Date <input type="date" name="acDouble1" min="2023-07-06"></td>
+          <td>End Date <input type="date" name="acDouble2" min="2023-07-07"></td>
+        </tr>
+      </table>
+      <br>
+      <button>Book</button>
+    </div>
+  </form>
+</body>
+
+</html>

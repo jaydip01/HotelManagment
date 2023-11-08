@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Food Menu</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://plus.unsplash.com/premium_photo-1661768443189-d6a3c9181d6d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=869&q=80");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 900px;
+        margin: 50px auto;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        padding: 50px;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+        text-decoration: underline;
+    }
+
+    h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    table {
+        width: 100%;
+        margin-bottom: 20px;
+        border-collapse: collapse;
+    }
+
+    th, td {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+
+    th {
+        background-color: #99ccff;
+        font-weight: bold;
+    }
+
+    td input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <form action='food' method='post'>
+            <h1>Select Your Order</h1>
+            <h2>Starters</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                </tr>
+                <tr>
+                    <td>Chicken Lollipop</td>
+                    <td>&#8377;160</td>
+                    <td>Qty <input type="number" name="lolly" min="1"></td>
+                </tr>
+                <tr>
+                    <td>Crispy Chicken</td>
+                    <td>&#8377;180</td>
+                    <td>Qty <input type="number" name="crispy" min="1"></td>
+                </tr>
+                <tr>
+                    <td>Chicken Manchurian</td>
+                    <td>&#8377;140</td>
+                    <td>Qty <input type="number" name="manchu" min="1"></td>
+                </tr>
+            </table>
+
+            <h2>Main Course</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                </tr>
+                <tr>
+                    <td>Chicken Butter Masala</td>
+                    <td>&#8377;160</td>
+                    <td>Qty <input type="number" name="cButter" min="1"></td>
+                </tr>
+                <tr>
+                    <td>Chicken Biryani</td>
+                    <td>&#8377;190</td>
+                    <td>Qty <input type="number" name="cBiryani" min="1"></td>
+                </tr>
+                <tr>
+                    <td>Mutton Biryani</td>
+                    <td>&#8377;210</td>
+                    <td>Qty <input type="number" name="mBiryani" min="1"></td>
+                </tr>
+            </table>
+
+            <h2>Desserts</h2>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Qty</th>
+                </tr>
+                <tr>
+                    <td>Fried Ice Cream</td>
+                    <td>&#8377;60</td>
+                    <td>Qty <input type="number" name="ice" min="1"></td>
+                </tr>
+                <tr>
+                    <td>Hot Gulab Jamun</td>
+                    <td>&#8377;50</td>
+                    <td>Qty <input type="number" name="gulab" min="1"></td>
+                </tr>
+                <tr>
+                    <td>Double Ka Meeta</td>
+                    <td>&#8377;70</td>
+                    <td>Qty <input type="number" name="double" min="1"></td>
+                </tr>
+            </table>
+
+            <button>Place Order</button>
+        </form>
+    </div>
+</body>
+</html>

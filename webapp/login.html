@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://images.unsplash.com/photo-1507608158173-1dcec673a2e5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 800px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333;
+      text-align: center;
+    }
+
+    table {
+      width: 500px;
+      margin: 0 auto;
+    }
+
+    table td {
+      padding: 5px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    input[type="submit"] {
+      background-color: #cc66cc;
+      color: white;
+      width: 95px;
+      padding: 8px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #a64ca6;
+    }
+
+    div.align-right {
+      text-align: right;
+      margin-top: 10px;
+    }
+
+    div.align-right a {
+      text-decoration: none;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+  <form action="login" method="post">
+    <div class="container">
+      <h2>Login Page</h2>
+      <table>
+        <tr>
+          <td>Enter UserName</td>
+          <td><input type="text" name="uname" required></td>
+        </tr>
+        <tr>
+          <td>Enter Password</td>
+          <td><input type="password" name="pass" required></td>
+        </tr>
+      </table>
+      <br>
+      <input type="submit" value="Login">
+      <div class="align-right">
+        <a href="register.html">New User?</a>
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
